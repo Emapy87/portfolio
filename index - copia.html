@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="description" content="Portafolio profesional de Emanuel Martínez - Especialista en TI y Desarrollo Full Stack">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emanuel Martínez - Operations Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #f39c12; /* Color naranja para indicar trabajo en progreso */
+    color: white;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #1abc9c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --gray: #95a5a6;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        .header-text {
+            flex: 2;
+        }
+        
+        h1 {
+            color: var(--primary);
+            margin-bottom: 5px;
+            font-size: 2.2em;
+        }
+        
+        h2 {
+            color: var(--secondary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 5px;
+            display: inline-block;
+            margin-top: 25px;
+        }
+        
+        h3 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--dark);
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+        }
+        
+        section {
+            margin-bottom: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .profile {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .achievement-card {
+            background: var(--light);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+        
+        .experience-item {
+            margin-bottom: 20px;
+        }
+        
+        .job-title {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-category {
+            margin-bottom: 15px;
+        }
+        
+        .skill-item {
+            margin-bottom: 8px;
+        }
+        
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: #ddd;
+            border-radius: 4px;
+            margin-top: 3px;
+        }
+        
+        .skill-level {
+            height: 100%;
+            background: var(--accent);
+            border-radius: 4px;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .project-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+        .project-info {
+            padding: 15px;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: var(--primary);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--secondary);
+            color: var(--secondary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: var(--gray);
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-img {
+                margin-top: 20px;
+            }
+            
+            .job-title {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1>MSc. Emanuel Osiris Martínez Castro</h1>
+            <p>Operations Specialist | Full-Stack Developer | IT Consultant</p>
+            <div class="contact-info">
+                <span class="contact-item"><i class="fas fa-map-marker-alt"></i> Ñemby, Paraguay</span>
+                <span class="contact-item"><i class="fas fa-envelope"></i> manu.py87@gmail.com</span>
+                <span class="contact-item"><i class="fas fa-phone"></i> +595 981 269798</span>
+                <span class="contact-item"><i class="fas fa-car"></i> Vehículo propio</span>
+                <span class="contact-item"><i class="fas fa-globe"></i> Disponibilidad remota</span>
+            </div>
+        </div>
+        <img src="fotos/perfil.jpg" alt="Profile Photo" class="profile-img">
+    </header>
+
+    <section class="profile">
+        <h2><i class="fas fa-user"></i> Perfil Profesional</h2>
+        <p>Profesional bilingüe (español/guaraní) con +13 años de experiencia en gestión de sistemas, automatización y docencia técnica. Combinación única de habilidades en:</p>
+        <ul>
+            <li><strong>Automatización de procesos</strong> (Python, APIs, IA, scripts)</li>
+            <li><strong>Desarrollo full-stack</strong> (React, Node.js, TypeScript, Java)</li>
+            <li><strong>Infraestructura TI</strong> (redes, servidores Linux/Windows, seguridad DMZ)</li>
+            <li><strong>Liderazgo educativo</strong> (formación de profesionales en tecnologías modernas)</li>
+        </ul>
+    </section>
+
+    <section class="achievements-section">
+        <h2><i class="fas fa-trophy"></i> Logros Clave</h2>
+        <div class="achievements">
+            <div class="achievement-card">
+                <h3>Sistema Integral de Gestión Educativa</h3>
+                <p>Plataforma web (Python + React + Supabase) para automatizar carga de calificaciones, registros conductuales e informes, reduciendo un 40% el tiempo administrativo. Integración con APIs de Google Workspace.</p>
+            </div>
+            <div class="achievement-card">
+                <h3>Sistema de Votación Estudiantil</h3>
+                <p>Aplicación full-stack (TypeScript + Node.js) con resultados en tiempo real y autenticación segura.</p>
+            </div>
+            <div class="achievement-card">
+                <h3>Consultoría TI para Instituciones</h3>
+                <p>Migración a la nube de sistemas legacy, configuración de redes DMZ y VPN. Capacitación en Zapier y Python para automatización.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience">
+        <h2><i class="fas fa-briefcase"></i> Experiencia Relevante</h2>
+        
+        <div class="experience-item">
+            <div class="job-title">
+                <h3>Consultor TI & Docente Universitario</h3>
+                <span>2014 – Presente</span>
+            </div>
+            <p><em>Universidad Tecnológica Intercontinental (UTIC)</em></p>
+            <ul>
+                <li>Scripts en Python para sincronizar datos entre sistemas académicos</li>
+                <li>Gestión de servidores Linux (Apache, PostgreSQL), firewall y backups</li>
+                <li>Cursos de programación (Java/Python), redes y bases de datos</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <div class="job-title">
+                <h3>Desarrollador Full-Stack (Proyectos Institucionales)</h3>
+                <span>2017 – Presente</span>
+            </div>
+            <p><em>Colegio Experimental Paraguay-Brasil</em></p>
+            <ul>
+                <li>Sistema de Votación Digital: Arquitectura serverless con Node.js y Supabase</li>
+                <li>Registro Anecdótico de Conductas: Aplicación React con autenticación JWT</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <div class="job-title">
+                <h3>Docente de Informática</h3>
+                <span>2011 – Presente</span>
+            </div>
+            <p><em>Colegios Cristianos, UTIC, Colegio Metodista Nuevo Horizonte</em></p>
+            <ul>
+                <li>Enseñanza de programación, redes, ofimática y hardware</li>
+                <li>Actualización curricular en tecnologías modernas</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2><i class="fas fa-code"></i> Habilidades Técnicas</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Lenguajes</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Python</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>JavaScript/TypeScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Java</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>SQL</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Tecnologías</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>React</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Node.js</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>APIs REST</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>PostgreSQL/MySQL</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Herramientas</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Git</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Docker</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Zapier</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Linux Server</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <h2><i class="fas fa-project-diagram"></i> Proyectos Destacados</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="fotos/votacion.png" alt="Student Voting System" class="project-img">
+                <div class="project-info">
+                    <h3>Sistema de Votación Estudiantil</h3>
+                    <p>Plataforma segura para elecciones estudiantiles con resultados en tiempo real.</p>
+                    <div class="project-links">
+                        <a href="https://student-voting-hub.lovable.app/" class="btn" target="_blank">Ver Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="fotos/restaurante.png" alt="Restaurant System" class="project-img">
+                <div class="project-info">
+                    <h3>Sistema de Gestión de Restaurantes <span class="badge">En desarrollo</span></h3>
+                    <p>Plataforma para administración de menús, reservas y pedidos.</p>
+                    <div class="project-links">
+                        <a href="https://preview--dine-and-discover.lovable.app/" class="btn" target="_blank">Ver Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="fotos/odonto.png" alt="Dental System" class="project-img">
+                <div class="project-info">
+                    <h3>Sistema de Citas Odontológicas <span class="badge">En desarrollo</span> </h3>
+                    <p>Gestor de citas y historiales médicos para clínicas dentales (en desarrollo).</p>
+                    <div class="project-links">
+                        <a href="https://preview--dental-appointment-hub.lovable.app/" class="btn" target="_blank">Ver Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education">
+        <h2><i class="fas fa-graduation-cap"></i> Formación Académica</h2>
+        <div class="experience-item">
+            <div class="job-title">
+                <h3>Maestría en Auditoría y Gestión de Sistemas</h3>
+                <span>2018</span>
+            </div>
+            <p><em>Universidad Tecnológica Intercontinental (UTIC)</em></p>
+        </div>
+        <div class="experience-item">
+            <div class="job-title">
+                <h3>Lic. en Análisis de Sistemas</h3>
+                <span>2011</span>
+            </div>
+            <p><em>Universidad Tecnológica Intercontinental (UTIC)</em></p>
+        </div>
+        
+        <h3 style="margin-top: 20px;">Cursos Recientes</h3>
+        <ul>
+            <li>Python Avanzado (Cisco, 2025)</li>
+            <li>Ciberseguridad Básica (Cisco, 2025)</li>
+            <li>Desarrollo Web (Universidad de Alicante, 2017)</li>
+        </ul>
+    </section>
+
+    <section class="languages">
+        <h2><i class="fas fa-language"></i> Idiomas</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Español</span>
+                    <span>Nativo</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Guaraní</span>
+                    <span>Intermedio</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Inglés</span>
+                    <span>Básico Técnico</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 40%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Emanuel Martínez | <a href="https://www.linkedin.com/in/emanuel-martinez-1a16081a0" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+                <a href="CV_Emanuel_Martinez.pdf" download class="btn">
+            <i class="fas fa-download"></i> Descargar Resumen
+        </a>
+    </footer>
+</body>
+</html>
