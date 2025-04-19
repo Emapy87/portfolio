@@ -17,7 +17,7 @@ const Hero = () => {
           <AnimatedElement type="fade" direction="up" duration={1000} delay={200}>
             <div className="flex justify-center mb-6">
               <Avatar className="h-32 w-32 border-4 border-primary/20">
-                <AvatarImage src="./assets/images/perfil.jpg" alt="Emanuel Martínez" />
+                <AvatarImage src={import.meta.env.BASE_URL + "assets/images/perfil.jpg"} alt="Emanuel Martínez" />
                 <AvatarFallback>EM</AvatarFallback>
               </Avatar>
             </div>

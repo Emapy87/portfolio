@@ -8,7 +8,7 @@ const achievementsData = [
     creator: "Proyecto Personal",
     year: "2022-2023",
     description: "Plataforma web (Python + React + Supabase) para automatizar carga de calificaciones, registros conductuales e informes, reduciendo un 40% el tiempo administrativo. Integración con APIs de Google Workspace.",
-    image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=2494&auto=format&fit=crop",
+    image: import.meta.env.BASE_URL + "assets/images/sistemas.jpg",
     color: "from-indigo-900/80 to-indigo-900/30"
   },
   {
@@ -17,7 +17,7 @@ const achievementsData = [
     creator: "Proyecto Institucional",
     year: "2021",
     description: "Aplicación full-stack (TypeScript + Node.js) con resultados en tiempo real y autenticación segura para elecciones estudiantiles.",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop",
+    image: import.meta.env.BASE_URL + "assets/images/voto.jpg",
     color: "from-red-900/80 to-red-900/30"
   },
   {
@@ -26,7 +26,7 @@ const achievementsData = [
     creator: "Servicio Profesional",
     year: "2018-Presente",
     description: "Migración a la nube de sistemas legacy, configuración de redes DMZ y VPN. Capacitación en Zapier y Python para automatización de procesos administrativos.",
-    image: "https://images.unsplash.com/photo-1627856013091-fed6e4e30025?q=80&w=2070&auto=format&fit=crop",
+    image: import.meta.env.BASE_URL + "assets/images/consultoria.jpg",
     color: "from-green-900/80 to-green-900/30"
   },
 ];

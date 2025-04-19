@@ -8,7 +8,7 @@ const projectsData = [
     title: "Sistema de Votación Estudiantil",
     description: "Plataforma segura para elecciones estudiantiles con resultados en tiempo real.",
     technologies: ["Node.js", "React", "Supabase", "JWT"],
-    image: "./assets/images/votacion.png",
+    image: import.meta.env.BASE_URL + "assets/images/votacion.png",
     link: "https://student-voting-hub.lovable.app/",
     status: ""
   },
@@ -16,7 +16,7 @@ const projectsData = [
     title: "Sistema de Gestión de Restaurantes",
     description: "Plataforma para administración de menús, reservas y pedidos.",
     technologies: ["React", "Node.js", "PostgreSQL", "Express"],
-    image: "./assets/images/restaurante.png",
+    image: import.meta.env.BASE_URL + "assets/images/restaurante.png",
     link: "https://preview--dine-and-discover.lovable.app/",
     status: "En desarrollo"
   },
@@ -24,7 +24,7 @@ const projectsData = [
     title: "Sistema de Citas Odontológicas",
     description: "Gestor de citas y historiales médicos para clínicas dentales.",
     technologies: ["TypeScript", "React", "Node.js", "MongoDB"],
-    image: "./assets/images/odonto.png",
+    image: import.meta.env.BASE_URL + "assets/images/odonto.png",
     link: "https://preview--dental-appointment-hub.lovable.app/",
     status: "En desarrollo"
   },
